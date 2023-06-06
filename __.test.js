@@ -7,3 +7,8 @@ describe('GET /example', () => {
     expect(response.status).toBe(200);
   });
 });
+
+afterAll(done => {
+    server.close();
+    done();
+});
